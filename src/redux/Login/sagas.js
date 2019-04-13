@@ -13,8 +13,8 @@ function* loginUser({type, payload}) {
     	yield put(showLoading())
 		const response = yield call(api.login, payload)
 		if (response.data.success){
-	    	yield put(hideLoading())
 			yield util.authenticateUser(response.data.token)
+    	yield put(hideLoading())
 			yield put(action.loginSuccess(response.data.user))
 			yield put(push('/todos'))
 		} else {
