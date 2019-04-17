@@ -1,36 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
-
 * {
   color: #3b3b3b;
-  font-family: 'Rubik';
+  font-family: 'Poppins'
+}
+
+p, span, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color : #f6f6f6;
 }
 
-input:first-letter {
-  text-transform: capitalize;
+/*Custom Scrollbar*/
+/* total width */
+body::-webkit-scrollbar {
+    background-color:#fff;
+    width:16px
 }
-
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color:#F1C40F;
+    border-radius:16px;
+    border:4px solid #fff
+}
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button { display:none }
+/* Fonts */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins-Regular.ttf')format('truetype'); 
+}
+@font-face {
+  font-family: 'PoppinsLight';
+  src: url('../../fonts/Poppins-Light.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../../fonts/Poppins-Medium.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url('../../fonts/Poppins-SemiBold.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('../../fonts/Poppins-Bold.ttf')format('truetype');
+}
 /*Font weights*/
-.light { font-weight: 300 !important; }
-.regular { font-weight: 400 !important; }
-.bold { font-weight: 500 !important; }
-/*Colors*/
-.black { color: #3b3b3b !important; }
-.light-gray { color: #909090 !important; }
-.gray { color: #666 !important; }
-
-.xxsmall{ font-size: .7rem; }
-.xsmall{ font-size: .8rem; }
-.small{ font-size: 1rem; }
-.medium{ font-size: 1.3rem; }
-.large{ font-size: 1.5rem; }
-
-.uppercase { text-transform: uppercase; }
-.capitalize { text-transform: capitalize; }
-
+.f-light { font-weight: 300 !important; }
+.f-regular { font-weight: 300 !important; }
+.f-medium { font-weight: 400 !important; }
+.f-semibold { font-weight: 500 !important; }
+.f-bold { font-weight: 500 !important; }
+/*Text sizes*/
+.t-xxsmall{ font-size: .6rem; }
+.t-xsmall{ font-size: .8rem; }
+.t-small{ font-size: 1rem; }
+.t-medium{ font-size: 1.3rem; }
+.t-large{ font-size: 1.5rem; }
+/*Font style*/
+.t-uppercase { text-transform: uppercase; }
+.t-capitalize { text-transform: capitalize; }
+/*App*/
 .pointer { cursor: pointer !important; }
 
 .loader {
